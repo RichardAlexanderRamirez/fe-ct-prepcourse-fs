@@ -8,16 +8,13 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
-   if(num === 0){
-      //console.log(num + 'es un numero falso')
-      return "falso";
-   }else if (num > 0){
-      //console.log(num + 'es un numero positivo')
-      return "Positivo";
-      }else{
-         //console.log(num + 'es un numero negativo')
-         return "Negativo";
-      } 
+    if (num > 0){
+      return "Es positivo";
+      }else if(num < 0){
+         return "Es negativo";
+      } else{
+         return false;
+      }
 }
 
 
@@ -32,14 +29,14 @@ function combinarNombres(nombre, apellido) {
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
-   console.log(`${nombre} ${apellido}`)
+   return(`${nombre} ${apellido}`)
 }
 
 function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
-   return(`hola ${nombre}!`);
+   return(`Hola ${nombre}!`);
 
 }
 
@@ -64,7 +61,7 @@ retornarPerimetro(2);
 function areaDelTriangulo(base, altura) {
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
-   let tringulo = base * altura;
+   let tringulo = base * altura / 2;
    return tringulo;
 }
 
@@ -87,17 +84,17 @@ function esVocal(letra) {
    // Tu código:
    //let vocal  = "a, e, i, o, u"
    if(letra === "a"){
-      return("Es Vocal");
+      return("Es vocal");
    }else if(letra === "e"){
-      return("Es Vocal");
+      return("Es vocal");
    }else if(letra === "i"){
-      return("Es Vocal");
+      return("Es vocal");
    }else if(letra === "o"){
-      return("Es Vocal");
+      return("Es vocal");
    }else if(letra === "u"){
-      return("Es Vocal");
+      return("Es vocal");
    }else{
-      return("Dato Incorrecto");
+      return("Dato incorrecto");
    }
 }
 
